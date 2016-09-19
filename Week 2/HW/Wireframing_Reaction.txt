@@ -1,0 +1,11 @@
+Reaction to "Five Important Considerations for Wireframing"
+
+The UX is most influenced by the project and problem needed to be solved.
+This information comes from your client; additional information from employees directly working with the website/program is also important.
+
+Sketching or diagramming the information architecture is an important step and should be repeated multiple times throughout the process.
+One may get excited and start coding out the application/website right away, but doing so would waste time in the long run.
+Showing the sketches/diagrams to the client is important as well to find out exactly what they had in mind.
+
+Know your clients and their specific needs because not all projects work best with a single design.
+It must be modified based on the specifications.
