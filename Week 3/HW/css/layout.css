@@ -1,0 +1,227 @@
+@import 'https://fonts.googleapis.com/css?family=Slabo+27px';
+
+body
+{
+	font-family: 'Slabo 27px', sans-serif;
+}
+
+/* Navigation */
+
+nav ul.top
+{
+	/* remove the default bullet point */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	/*width: 500px;*/
+	width: 100%;
+	background-color: #232323;
+	/*float: right;*/
+}
+
+nav a.top
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+nav li a.top
+{
+	 display: block;
+	 text-align: center;
+	 padding: 10px 10px;
+	 text-decoration: none;
+	 color: #31e578;
+}
+
+li a:hover.top
+{
+	background-color: #31e578;
+	color: black;
+}
+
+nav ul.second
+{
+	/* remove the default bullet point */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	/*width: 500px;*/
+	width: 100%;
+	background-color: #31e578;
+	float: right;
+}
+
+nav a.second
+{
+	text-decoration: none;
+	color: black;
+	display: block;
+}
+
+nav li a.second
+{
+	 list-style-type: none;
+	 display: block;
+	 text-align: center;
+	 padding: 10px 10px;
+	 text-decoration: none;
+	 color: black;
+}
+
+li a:hover.second
+{
+	background-color: black;
+	color: white;
+}
+
+nav ul.third
+{
+	/* remove the default bullet point */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	/*width: 500px;*/
+	width: 100%;
+	background-color: none;
+	float: right;
+}
+
+nav a.third
+{
+	text-decoration: none;
+	color: black;
+	display: block;
+}
+
+nav li a.third
+{
+	 list-style-type: none;
+	 display: block;
+	 text-align: center;
+	 padding: 10px 10px;
+	 text-decoration: none;
+	 color: black;
+}
+
+li a:hover.third
+{
+	background-color: black;
+	color: white;
+}
+
+nav ul.side
+{
+	/* remove the default bullet point */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 200px;
+	/*width: 100%;*/
+	background-color: #232323;
+	/*float: left;*/
+}
+
+li a.side
+{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
+li a:hover.side
+{
+	background-color: #31e578;
+	color: #232323;
+}
+
+aside
+{
+	width: 200px;
+	float: right;
+	padding: 10px;
+}
+
+aside img
+{
+	width: 190px;
+	height: auto;
+
+}
+
+nav a.bottom
+{
+	text-decoration: none;
+	color: #31e578;
+	display: block;
+}
+
+nav ul.bottom
+{
+	/* remove the default bullet point */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	/*width: 500px;*/
+	width: 100%;
+	background-color: #232323;
+	/*float: right;*/
+}
+
+nav a.bottom
+{
+	text-decoration: none;
+	color: #31e578;
+	display: block;
+}
+
+nav li a.bottom
+{
+	 list-style-type: none;
+	 display: block;
+	 text-align: center;
+	 padding: 10px 10px;
+	 text-decoration: none;
+	 /*color: black;*/
+}
+
+li a:hover.bottom
+{
+	background-color: #31e578;
+	color: #232323;
+}
+
+nav li
+{
+	float: left;
+	width: 100px;
+}
+
+main img
+{
+	width: 400px;
+	height: auto;
+}
+
+ html
+ {	
+ 	/* background: url(link to image) | repeat | center horizontally | center vertically | fix it in window bg */
+ 	background: url(../img/bg.jpeg) no-repeat center center fixed;
+ 	background-size: cover;
+ 	/* CSS3 Legacy Browser Fallbacks */
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	/* INTERNET EXPLORER */
+ 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale')";
+ }
+
+ 

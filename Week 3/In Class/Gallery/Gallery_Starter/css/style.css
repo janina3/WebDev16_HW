@@ -1,0 +1,65 @@
+/* @import 'https://fonts.googleapis.com/css?family=Kaushan+Script';*/
+@import 'https://fonts.googleapis.com/css?family=Architects+Daughter|Kaushan+Script';
+
+ body
+ {
+ 	/*font-family: 'Kaushan Script', cursive;*/
+ 	font-family: 'Architects Daughter', cursive;
+ }
+
+ html
+ {	
+ 	/* background: url(link to image) | repeat | center horizontally | center vertically | fix it in window bg */
+ 	background: url(../img/bg.jpg) no-repeat center center fixed;
+ 	background-size: cover;
+ 	/* CSS3 Legacy Browser Fallbacks */
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	/* INTERNET EXPLORER */
+ 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale')";
+ }
+
+ div.container
+ {
+ 	width: 900px;
+ 	margin: 0 auto;
+ }
+
+ div.polaroid
+ {
+ 	position: relative;
+ 	width: 240px;
+ 	display: inline-block;
+ 	margin: 20px;
+ }
+
+ .polaroid img
+ {
+	width: 100%;
+	height: auto;
+	/*border: 10px solid #31e578;*/
+	border: 10px solid #FEF9EF;
+	border-bottom: 45px solid #FEF9EF;
+	/* box shadow - horizontal shadow | vertical shadow | blur | spread | color */
+	box-shadow: 3px 3px 5px 5px rgba(255, 255, 255, 0.2);
+	/* Legacy CSS3 Fallbacks */
+	-webkit-box-shadow: 3px 3px 5px 5px rgba(255, 255, 255, 0.2);
+	-moz-box-shadow: 3px 3px 5px 5px rgba(255, 255, 255, 0.2);
+	-o-box-shadow: 3px 3px 5px 5px rgba(255, 255, 255, 0.2);
+
+ }
+
+ /* absolute positioning of an element is based on the browser dimensions */
+ /* relative positioning is positioning relative to where it would hve rendered by default */
+ /* if you want to position an element relative to its container, the element positioned absolute, and its parent/container gets position relative */
+
+ .polaroid p
+ {
+ 	text-align: center;
+ 	position: absolute;
+ 	width: 100%;
+ 	bottom: 0px;
+ }
+ 
