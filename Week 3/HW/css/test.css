@@ -12,3 +12,15 @@ nav ul li{
  	padding:10px 10px;
  	text-decoration: none;
  }
+
+ a.top{
+ 	/*change color of bg and text*/
+ }
+
+ #second{
+ 	color:green;
+ 	background-color: red;
+ }
+nav ul.nav-right{
+	float:right;
+}
