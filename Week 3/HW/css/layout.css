@@ -23,7 +23,6 @@ h1.sitename
 }
 
 /* Navigation */
-
 nav ul.top
 {
 	/* remove the default bullet point */
@@ -40,9 +39,10 @@ nav ul.top
 nav ul li.top
 {
 	width: 125px;
-	float: center;
+	float: left;
 	/* Change padding, messes up ul.top*/
-	padding: 0px 10px;
+	/*padding: 20px 10px;*/
+
 }
 
 nav ul li a.top
@@ -53,7 +53,7 @@ nav ul li a.top
 	 padding: 10px 10px;
 	 /*text-decoration: none;*/
 	 color: #31e578;
-	 width: 125px;
+	 /*width: 105px;*/
 }
 
 nav ul li a:hover.top

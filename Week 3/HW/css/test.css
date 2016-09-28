@@ -1,0 +1,14 @@
+nav ul {
+	width:100%;
+	list-style: none;
+}
+
+nav ul li{
+	float:left;
+	width:100px;
+}
+ nav ul a{
+ 	display:block;
+ 	padding:10px 10px;
+ 	text-decoration: none;
+ }
