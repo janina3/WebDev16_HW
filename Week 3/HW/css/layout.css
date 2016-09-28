@@ -1,8 +1,25 @@
 @import 'https://fonts.googleapis.com/css?family=Slabo+27px';
 
+/**
+{
+	border: solid red 2px;
+}*/
+
 body
 {
 	font-family: 'Slabo 27px', sans-serif;
+}
+
+header
+{
+	height: 200px;
+}
+
+h1.sitename
+{
+	font-size: 100px;
+	text-align: center;
+	margin: 25px;
 }
 
 /* Navigation */
@@ -10,7 +27,7 @@ body
 nav ul.top
 {
 	/* remove the default bullet point */
-	list-style-type: none;
+	/*list-style-type: none;*/
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -20,23 +37,26 @@ nav ul.top
 	/*float: right;*/
 }
 
-nav a.top
+nav ul li.top
 {
-	text-decoration: none;
-	color: white;
-	display: block;
+	width: 125px;
+	float: center;
+	/* Change padding, messes up ul.top*/
+	padding: 0px 10px;
 }
 
-nav li a.top
+nav ul li a.top
 {
+	 font-size: 25px;
 	 display: block;
 	 text-align: center;
 	 padding: 10px 10px;
-	 text-decoration: none;
+	 /*text-decoration: none;*/
 	 color: #31e578;
+	 width: 125px;
 }
 
-li a:hover.top
+nav ul li a:hover.top
 {
 	background-color: #31e578;
 	color: black;
@@ -45,7 +65,7 @@ li a:hover.top
 nav ul.second
 {
 	/* remove the default bullet point */
-	list-style-type: none;
+	/*list-style-type: none;*/
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -57,14 +77,13 @@ nav ul.second
 
 nav a.second
 {
-	text-decoration: none;
+	/*text-decoration: none;*/
 	color: black;
 	display: block;
 }
 
 nav li a.second
 {
-	 list-style-type: none;
 	 display: block;
 	 text-align: center;
 	 padding: 10px 10px;
@@ -74,14 +93,14 @@ nav li a.second
 
 li a:hover.second
 {
-	background-color: black;
-	color: white;
+	background-color: #232323;
+	color: #FFFFFF;
 }
 
 nav ul.third
 {
 	/* remove the default bullet point */
-	list-style-type: none;
+	/*list-style-type: none;*/
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -93,49 +112,48 @@ nav ul.third
 
 nav a.third
 {
-	text-decoration: none;
+	/*text-decoration: none;*/
 	color: black;
-	display: block;
 }
 
 nav li a.third
 {
-	 list-style-type: none;
 	 display: block;
-	 text-align: center;
-	 padding: 10px 10px;
-	 text-decoration: none;
+	 text-align: left;
+	 /*padding: 10px 10px;*/
+	 /*text-decoration: none;*/
 	 color: black;
 }
 
 li a:hover.third
 {
-	background-color: black;
 	color: white;
 }
 
-nav ul.side
+aside ul.side
 {
 	/* remove the default bullet point */
-	list-style-type: none;
+	/*list-style-type: none;*/
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	width: 200px;
+	/*width: 320px;*/
 	/*width: 100%;*/
 	background-color: #232323;
 	/*float: left;*/
 }
 
-li a.side
+aside li a.side
 {
 	display: block;
 	text-align: center;
 	text-decoration: none;
-	color: white;
+	color: #FFFFFF;
+	margin-top: 25px;
+	margin-bottom: 5px;
 }
 
-li a:hover.side
+aside li a:hover.side
 {
 	background-color: #31e578;
 	color: #232323;
@@ -143,21 +161,26 @@ li a:hover.side
 
 aside
 {
-	width: 200px;
+	text-align: center;
+	width: 25%;
 	float: right;
-	padding: 10px;
+	padding-bottom: 40px;
+	background-color: #232323;
+	color: #FFFFFF;
 }
 
 aside img
 {
-	width: 190px;
-	height: auto;
+	width: 260px;
+	height: 260px;
+	margin: auto;
+	display: block;
 
 }
 
 nav a.bottom
 {
-	text-decoration: none;
+	/*text-decoration: none;*/
 	color: #31e578;
 	display: block;
 }
@@ -165,7 +188,7 @@ nav a.bottom
 nav ul.bottom
 {
 	/* remove the default bullet point */
-	list-style-type: none;
+	/*list-style-type: none;*/
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -177,18 +200,18 @@ nav ul.bottom
 
 nav a.bottom
 {
-	text-decoration: none;
+	/*text-decoration: none;*/
 	color: #31e578;
 	display: block;
 }
 
 nav li a.bottom
 {
-	 list-style-type: none;
+	 /*list-style-type: none;*/
 	 display: block;
 	 text-align: center;
 	 padding: 10px 10px;
-	 text-decoration: none;
+	 /*text-decoration: none;*/
 	 /*color: black;*/
 }
 
@@ -204,24 +227,58 @@ nav li
 	width: 100px;
 }
 
-main img
+main
 {
-	width: 400px;
+	width: 65%;
 	height: auto;
+	padding: 10px 50px 50px 50px;
 }
 
- html
- {	
- 	/* background: url(link to image) | repeat | center horizontally | center vertically | fix it in window bg */
- 	background: url(../img/bg.jpeg) no-repeat center center fixed;
- 	background-size: cover;
- 	/* CSS3 Legacy Browser Fallbacks */
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	/* INTERNET EXPLORER */
- 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale')";
- }
+main h1
+{
+	margin-left: 15px;
+	width: 75%;
+	height: 50px;
+}
 
- 
+main img
+{
+	width: 800px;
+	height: 400px;
+}
+
+main a
+{
+	/*text-decoration: none;*/
+	color: #000000;
+}
+
+main a:hover
+{
+	color: #31e578;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+html
+{	
+	/* background: url(link to image) | repeat | center horizontally | center vertically | fix it in window bg */
+	background: url(../img/bg.jpeg) no-repeat center center fixed;
+	background-size: cover;
+	/* CSS3 Legacy Browser Fallbacks */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	/* INTERNET EXPLORER */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale')";
+}
+
