@@ -2,7 +2,8 @@
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--><!-- <html class="no-js" lang="en"> --> <!--<![endif]-->
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -21,7 +22,8 @@
 	<link rel="stylesheet" href="font_awesome/css/font-awesome.min.css">
 
 	
-	<script src="https://www.youtube.com/iframe_api"></script>
+	
+<!-- 	<script src="https://www.youtube.com/iframe_api"></script>
 
 	<script>
 		// var myVideo = iframe.getElementById("ytplayer");
@@ -80,8 +82,10 @@
 	        player.stopVideo();
 	      }
 
-	</script>
+	</script> -->
 
+	
+<!-- 
 	<script type="text/javascript">
 		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 		function myFunction() 
@@ -96,7 +100,7 @@
 		        x.className = "topnav";
 		    }
 		}
-	</script>
+	</script> -->
 	
 </head>
 <body>
@@ -119,28 +123,40 @@
 		</nav>
 	</header>
 
-	<!-- Video Header -->
-	<!-- <video class="fullscreen"> -->
-		<div id="player">
-			<!-- <iframe id="ytplayer" type="text/html" width="100%" height="650px" src="https://www.youtube.com/embed/n1LGW480w-I?autoplay=1&loop=1&controls=0&showinfo=0&modestbranding=0&fs:0&cc_load_policy=0&iv_load_policy=3&autohide=0&playlist=n1LGW480w-I" frameborder="0"></iframe> -->
-			<iframe class='youtube-player' id="player" type="text/html" src="https://www.youtube.com/embed/n1LGW480w-I?mode=opaque&autohide=1&autoplay=1&enablejsapi=1" frameborder="0"></iframe>
-		</div>
-	<!-- </video> -->
+	<div class="content">
+		<div class="myHeader">
 
-<!-- Reagency Lab Intro -->
-	<div class="container clearfix">
-		<div class="bio">
-			<div class="grid_8">
-				<h1>Reagency Lab</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac venenatis velit, et mollis lectus. Donec nec condimentum erat. Proin sit amet libero nisi. Fusce eu ex ligula. Donec mollis, erat accumsan egestas egestas, felis magna efficitur mi, ac iaculis nunc neque id ex. Nulla facilisi. Integer porttitor dignissim lorem, nec suscipit ligula mollis ut. Duis vel dui a urna vestibulum egestas ut sed lacus.</p>
+		<!-- Reagency Lab Intro -->
+		<div class="container clearfix">
+			<div class="bio">
+				<div class="grid_8">
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<h1>Reagency Lab</h1>
+					<p><em>The only agency specializing in science storytelling.</em></p>
+				</div>
 			</div>
 		</div>
-	
-		<div class="logoGrid">
-			<div class="grid_4">
-				<img src="img/7.jpg"/>
-			</div>
+		
+		<!-- Video Header -->
+		<!-- <video class="fullscreen"> -->
+			<!-- <div id="player"> -->
+				<!-- <iframe id="ytplayer" type="text/html" width="100%" height="650px" src="https://www.youtube.com/embed/n1LGW480w-I?autoplay=1&loop=1&controls=0&showinfo=0&modestbranding=0&fs:0&cc_load_policy=0&iv_load_policy=3&autohide=0&playlist=n1LGW480w-I" frameborder="0"></iframe> -->
+				<!-- <iframe class='youtube-player' id="player" type="text/html" src="https://www.youtube.com/embed/n1LGW480w-I?mode=opaque&autohide=1&autoplay=1&enablejsapi=1" frameborder="0"></iframe> -->
+				<video playsinline autoplay muted loop id="bgvid">
+	   			 <source src="Reagency.mp4" type="video/mp4">
+				</video>
+			<!-- </div> -->
+		<!-- </video> -->
+		
+			
 		</div>
+	</div>
+
+	<div class="logoPics">
+		<img src="img/7.jpg"/>
 	</div>
 
 <!-- Mosaic of Projects -->
@@ -151,60 +167,60 @@
 	<div class="projects">
 		<div class="grid_4">
 			<a href="company1.html" class="info"><div class="view view-portfolio">
-				<img src="img/1.jpg"/>
+				<img src="img/SEC2.jpg"/>
 				<div class="mask">
-					<h2>Project Title 1</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus sit amet urna at tristique.</p>
+					<h2>'The Club' 1</h2>
+					<p>Pilot television show, inspired by <em>MacGyver</em></p>
 				</div>
 			</div></a>
 		</div>
 
 		<div class="grid_4">
 			<a href="company1.html" class="info"><div class="view view-portfolio">
-				<img src="img/2.jpg"/>
+				<img src="img/SEC2.jpg"/>
 				<div class="mask">
-					<h2>Project Title 2</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus sit amet urna at tristique.</p>
+					<h2>'The Club' 2</h2>
+					<p>Pilot television show, inspired by <em>MacGyver</em></p>
 				</div>
 			</div></a>
 		</div>
 
 		<div class="grid_4">
 			<a href="company1.html" class="info"><div class="view view-portfolio">
-				<img src="img/3.jpg"/>
+				<img src="img/SEC2.jpg"/>
 				<div class="mask">
-					<h2>Project Title 3</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus sit amet urna at tristique.</p>
+					<h2>'The Club' 3</h2>
+					<p>Pilot television show, inspired by <em>MacGyver</em></p>
 				</div>
 			</div></a>
 		</div>
 
 		<div class="grid_4">
 			<a href="company1.html" class="info"><div class="view view-portfolio">
-				<img src="img/4.jpg"/>
+				<img src="img/SEC2.jpg"/>
 				<div class="mask">
-					<h2>Project Title 4</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus sit amet urna at tristique.</p>
+					<h2>'The Club' 4</h2>
+					<p>Pilot television show, inspired by <em>MacGyver</em></p>
 				</div>
 			</div></a>
 		</div>
 
 		<div class="grid_4">
 			<a href="company1.html" class="info"><div class="view view-portfolio">
-				<img src="img/5.jpg"/>
+				<img src="img/SEC2.jpg"/>
 				<div class="mask">
-					<h2>Project Title 5</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus sit amet urna at tristique.</p>
+					<h2>'The Club' 5</h2>
+					<p>Pilot television show, inspired by <em>MacGyver</em></p>
 				</div>
 			</div></a>
 		</div>
 
 		<div class="grid_4">
 			<a href="company1.html" class="info"><div class="view view-portfolio">
-				<img src="img/6.jpg"/>
+				<img src="img/SEC2.jpg"/>
 				<div class="mask">
-					<h2>Project Title 6</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus sit amet urna at tristique.</p>
+					<h2>'The Club' 6</h2>
+					<p>Pilot television show, inspired by <em>MacGyver</em></p>
 				</div>
 			</div></a>
 		</div>
@@ -231,6 +247,8 @@
 		</div> -->
 	<!-- </div> -->
 </footer>
+
+</div>
 
 </body>
 </html>
