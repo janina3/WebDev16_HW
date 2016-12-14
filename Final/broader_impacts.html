@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reagency: A Science PR Company</title>
+    <meta name="description" content="Reagency Media">
+    <meta name="author" content="Janina Soriano">
+
+    <!-- 996 Grid -->
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        //our code will go here for the form data
+        var btn = document.getElementById("submitBtn");
+        btn.disabled = false;
+        btn.addEventListener("click", fillForm);
+        
+    });
+
+    function fillForm() {
+        // grab our output div
+        var result = document.getElementById("formOutput");
+
+        var name = document.getElementById("name").value;
+        var company = document.getElementById("company").value;
+        var amt = document.getElementById("amt").value;
+        var purpose = document.getElementById("purpose").value;
+
+        // Convert amt from string to number
+        amt = parseFloat(amt);
+
+
+        // create p tag for output div
+        var p1 = document.createElement('P');
+
+        // create text nodes to append to the paragraphs
+        var t1 = document.createTextNode("I, " + name + ", from " + company + ", am requesting $" + amt + " in order to " + purpose + ".");
+
+        // append the text node to its paragraph parent element
+        p1.appendChild(t1);
+
+        result.appendChild(p1);
+
+        // btn.disabled = true;
+        // return true;
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Main Menu -->
+    <header>
+        <a href="index.html"><img src="img/logo-small.jpg"></a>
+        <div class="nav-collapse">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav>
+            <ul id="desktop">
+                <li class="reg" id="bioBtn"><a href="index.html" class="menu">Home</a></li>
+                <li class="reg"><a class="menu" href="index.html#work" id="ourWorkBtn">Our Work</a></li>
+                <li class="reg"><a class="menu" href="our_people.html">Our People</a></li>
+                <li class="reg"><a class="active menu" href="broader_impacts.html">Broader Impacts</a></li>
+            </ul>
+            <ul class="small" id="bioBtn">
+                <li class="mobile"><a href="index.html">Home</a></li>
+                <li class="mobile"><a href="index.html#work">Our Work</a></li>
+                <li class="mobile"><a href="our_people.html">Our People</a></li>
+                <li class="mobile"><a class="active" href="broader_impacts.html">Broader Impacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <!-- Grant Proposal Form -->
+        <div class="formContent">
+            <h1 class="form">Broader Impacts</h1>
+            <p class="form"><em>Grant Proposal Form</em></p>
+            <div class="container" style="margin-top: 50px">
+                <div class="formInput">
+                    <div class="grid_6 formThing">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+
+                    <div class="grid_6 formThing">
+                        <label for="company">Company:</label>
+                        <input type="text" name="company" id="company">
+                    </div>
+
+                    <div class="grid_6 formThing">
+                        <label for="amt">Amount:</label>
+                        <input type="text" name="amt" id="amt" step="1">
+                    </div>
+
+                    <div class="grid_6 formThing">
+                        <label for="purpose">Purpose:</label>
+                        <input type="text" name="purpose" id="purpose">
+                    </div>
+                </div>
+
+                <div class="grid_12">
+                    <div class="formButton">
+                    	<button type="submit" class="btn btn-default" id="submitBtn">Submit</button>
+                    </div>
+                </div>
+                
+                <div class="well grid_12" id="formOutput"></div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="ad">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:lab@reagencylab.com">lab@reagencylab.com</a>
+                    <br/> Call: +1 347 698 3291 (NY)</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+    <!-- Hamburger Menu -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous">
+    </script>
+    <script src="js/nav.js"></script>
+</body>
+</html>
